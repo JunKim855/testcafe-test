@@ -33,6 +33,7 @@ jobs:
 
       - run: curl https://install.meteor.com/ | sh
 
+      - uses: meteorengineer/setup-meteor@v1
       - name: Run Meteor commands
         shell: bash -l {0}
         run: |
